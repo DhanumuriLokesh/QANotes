@@ -1,0 +1,8 @@
+Topic:
+TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionality that makes it more powerful and easier to use.
+It gives the ability to produce HTML Reports of execution
+Annotations made testers life easy
+Test cases can be Grouped & Prioritized more easily
+Parallel testing is possible
+Generates Logs
+Data Parameterization is possible
