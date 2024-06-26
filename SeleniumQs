@@ -1,1 +1,161 @@
 
+
+3.How to handle iframes?
+Iframes in Web Development comes in, to embed objects such as external web pages or various documents, images, videos into a single web page. These embedded objects can be maps, videos, images, or any external HTML document, 
+Selenium WebDriver  provides three ways to switch the focus to a specific iframe:
+  1. Index of the iframe.    
+  2. using Name or Id of the iframe 
+  3. using the Web Element object of the iframe.
+driver.switchTo().frame(int index);
+//inex of frame
+driver.switchTo().frame("frameName or id");  // By name or id
+//String id
+driver.switchTo().frame("frameElement");
+//frameid store in element and pass this element
+
+          Two other methods :
+          //Switch to default content
+        driver.switchTo().defaultContent();
+
+          //Switch to Parent iFrame
+          driver.switchTo().parentFrame();
+
+=============================================================================================
+5.what  is the use of TestngListeners?
+
+In TestNG, listeners are Java classes that allow you to customize and control the behavior of test execution. 
+It is an interface that listens to predefined events in test scripts and modifies the default behavior of the TestNG tool. 
+Whether you want to customize reports or generate logs for specific tests, 
+TestNG listeners help you to do so. 
+Testers would also want to define prerequisites and clean-up configurations for each test project.
+
+For instance, the ITestListner contains the following methods.
+    onStart(): Invoked at the start of a test.
+    onTestFailure(): Invoked when the test fails
+    onTestSuccess(): Invoked when a test passes
+    onTestSkipped(): Invoked when skipping tests.
+    onFinish(): Invoked when finishing tests.
+
+XML File ::: configuter listener class
+            <suite name="Suite">
+            <listeners>
+            <listener class-name="MyListener"/>
+            </listeners>
+            <test name="Listeners_program">
+            <classes>
+            <class name="ItestListenerWithExample"></class>
+            </classes>
+            </test>
+            </suite>
+
+Configuring Listeners
+You can configure listeners in your TestNG XML configuration file (testng.xml) 
+
+or 
+
+by using the @Listeners annotation in your test classes.
+
+
+simple listeners class :::
+public class MyListener implements ITestListener {
+
+@Override
+public void onFinish(ITestContext contextFinish) {
+System.out.println("onFinish method finished");
+
+}
+Test Class ::::
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+@Listeners(CustomTestListener.class)
+public class MyTestClass {
+
+    @Test
+    public void testMethod1() {
+        // Test method 1 logic
+    }
+
+    @Test
+    public void testMethod2() {
+        // Test method 2 logic
+    }
+}
+
+=============================================================================================
+Project Object Model (POM)?
+
+pom.xml stands for Project Object Model XML.
+It is an XML file that contains information about the project and configuration details to build the project using Maven.
+Key Elements:
+
+Project Coordinates: Includes groupId, artifactId, version that uniquely identify the project.
+Dependencies: Specifies external libraries (dependencies) required for the project.
+Build Configuration: Defines how Maven should build the project, including plugins, goals, and profiles.
+Repositories: Specifies repositories where Maven can find dependencies.
+
+=============================================================================================
+HCL -Automation testing and Manual testing
+================================
+================================
+Automation Testing
+------------------
+1. Write a program to print your name in Java?
+2. In the above program what does public static void main signify?
+3. Write a program to add elements to a list?
+4. What datatype can be added to a List?
+5. How we can specify datatype of specific type in List?
+6. Write a program to iterate through a List?
+7. What is the difference between List and Map?
+9. In Selenium, what is WebDriver - a class or interface?
+10. Why we can't create instance of WebDriver directly?
+11. What is the difference between findElement and findElements? Explain scenario when it is used?
+12. Do you know to create a Framework for test execution ?
+13. What is the version of Selenium used?
+14. In Selenium write code to access FirefoxDriver?
+================================    ================================
+================================  ANS  ================================
+3. Write a program to add elements to a list?
+
+List<Integer> numbers = new ArrayList<>();
+
+        // Adding elements to the ArrayList
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+
+        // Adding elements at specific positions
+        numbers.add(1, 15); // Add 15 at index 1
+
+        // Displaying the ArrayList
+        System.out.println("ArrayList after adding elements: " + numbers);
+
+        // Accessing elements from the ArrayList
+        System.out.println("Element at index 2: " + numbers.get(2));
+
+===============================================================================
+
+6. Write a program to iterate through a List?
+ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(12);
+    numbers.add(8);
+    numbers.add(2);
+    numbers.add(23);
+    Iterator<Integer> it = numbers.iterator();
+    while(it.hasNext()) {
+      Integer i = it.next();
+      if(i < 10) {
+        it.remove();
+      }
+    }
+    System.out.println(numbers);
+  }
+
+
+
+
+
+
+
+
