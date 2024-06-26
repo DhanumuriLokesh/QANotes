@@ -1,0 +1,85 @@
+Most frequently asked interview questions on Manual Testing ::::
+What is a Defect
+Why do software have defects?
+SDLC models
+SDLC vs STLC 
+Explain Defect/Bug Life Cycle
+Severity Vs Priority
+Give examples of 4 combinations of Severity and Priority
+Why did you choose software testing as a career?
+What are the skills required for a software tester
+Difference between Test Scenario and Test case
+Fields in a Defect Template
+Inconsistent or non-reproducible defect
+Cosmetic Defect
+Deferred Defect
+Invalid Defect
+Duplicate Defect
+Masked Defect
+Latent  Defect
+Blocker or Showstopper Defect
+What are the different Severity Levels
+Types of Testing
+Difference between Alpha vs Beta Testing
+Difference between User Acceptance Testing
+"Please arrange the sequence the following types of testing
+Beta--smoke-Integration-Unit-API-Functional-Regression_UAT-Sanity"
+Exploratory Testing
+Risk Based Testing
+Difference between Smoke vs Sanity
+Difference between Retesting vs Regression
+Difference between Positive vs Negative
+Difference between System vs End to End Testing
+Difference between Globalization vs Localization vs Internationalisation
+Difference between Ad Hoc vs Exploratory
+Difference between Black vs White Vs Grey
+When do you stop testing
+What is Test Data
+What is  Environment
+What is Test bed
+Difference between Static vs Dynamic Testing
+Difference between  Error,Defect,Bug,Failure,Fault,Anomaly
+What is Accessibility Testing
+What is Performance Testing
+Load
+Stress
+Volume
+Endurance
+Security Testing
+Difference between UI vs Back end
+Difference between Unit vs Integration
+Difference between Unit vs API
+What are drivers and stubs in Integration testing
+Why do we do automation testing
+Compatibility testing
+Browser Compatibility/Cross Browser testing
+Test Design Techniques you know
+BVA(Boundary Value Analysis)
+ECP(Equivalence Class Partitioning)
+DT(Decision Table)
+ST(State Transition)
+EG(Error Guessing)
+What is RTM or Requirement Traceability Matrix
+What is BiDirectional RTM
+How do you make sure that testing is completed?
+What will you do/How will you handle it if the developer does not agree that it is a defect?
+Test Plan vs Test Strategy
+Test Deliverables
+Entry Criteria and Exit Criteria in a Test Plan
+What is test coverage
+What is Cause Effect
+Principles of testing
+What are the different Environment in your project
+How many test cases do you author or design or write per day?
+How many test cases do you execute per day?
+Best Practices for writing test cases
+Levels of Testing
+How will you handle if you get a production defect
+How will you handle it if the developer is not agreeing to your defect?
+Very limited time to release the product
+Explain about the most important defect you have found?
+How will you approach testing for any requirement or user story?
+How will you overcome the challenge of having limited/inaccurate documentation for testing?
+Why is regression testing in agile methodology challenging and how will you handle it?
+
+
