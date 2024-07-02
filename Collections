@@ -1,0 +1,76 @@
+arrays::
+problems : 
+1. fixed in size
+2. only homogeneous data types can hold.
+3. No underlying data structure in arrays. so, No predefined concepts for this.
+To overcome arrays problems  we should go for collections.
+
+collections:: 1.2 jdk came
+===========================================
+1. Growable in nature, Based on our requirement we can increase or decrease the size.
+2. collectios can hold Both Homo and HetroGeneous.
+3. Every Colletions is implemented we have some standard DS , We have ready made supprt available.
+4. Being a programmer we areresponsible to use those metods and we are not responsible to implement those methods.
+The term collection refers to a group of objects represented as one unit. 
+Classes in the Java collection class hierarchy are divided into two “root” interfaces: 
+===========>>>> Collection (java.util.Collection)
+===========>>>> Map (java.util.Map).
+issues :: 
+============================================
+Arrays
+Collection
+
+Arrays are fixed in size that is once we create an array 
+we can not increase or decrease based on our requirements.	
+The collection is growable in nature and is based on our requirements. 
+We can increase or decrease of size.
+
+With respect to memory, Arrays are not recommended for use.	
+
+With respect to memory, collections are recommended for use.
+
+With respect to performance, Arrays are recommended for use.	
+With respect to performance, collections are not recommended for use.
+
+Arrays can hold only homogeneous data types elements.	
+Collection can hold both homogeneous and heterogeneous elements.
+
+=============================================================================================================
+COLLECTION: 
+IF WE WANT TO REPRESENT A GROUP OF INDIVIDUAL OBJECT AS A ENTITY THEN WE GO FOR COLLECTION.
+WHAT WE MEANS COLLECTION FRAMEWORK?
+CONTAINS SEVERAL CLASSES AND INTERFACES WHICH CAN BE USED TO REPRESENT A GROUP OF INDIVIDUAL OBJECTS AS A SINGLE ENTITY. 
+
+9 KEY INTERFACES OF COLLECTION FRAMEWORK?
+==========================================
+1.COLLECTION
+2.LIST
+3.SET
+4.SORTED SET
+5.NAVIGABLE SET
+6.QUEUE
+7.MAP
+8.SORTEDMAP
+9.NAVIGABLEMAP
+==================================
+1.COLLECCTION INTERACE::[I]
+IF WE WANT TO REPRESENT A GROUP OF INDIVIDUAL OBJECTS AS A SINGLE ENTITY THEN WE SHOULD GO FOR COLLECTION.
+COLLECTION INTERFACE DEFINES TE MOST COMMON METHODS WHICH ARE APPLICABLE FOR ANY COLLECTION OBJECT.
+IN GENERAL COLLECTION INTERFACE IS CONSIDERED AS ROOT INTEERFACE OF COLLECTION FRAMEWORK.
+THERE IS NO CONCRETE CLASS WHICH IMPLEMENTS COLLECTION INTERFACE DIRECTLY.
+
+DIFFERENCE BETWEEN COLLECTION AND COLLECTIONS??
+COLLECTION IS INTERFACE, WHEN WE NEED TO REPRESENT A GROUP OF INDIVIDUAL OBJECTS AS A SINGLE ENTITY.GO FOR COLLECTION.
+COLLECTIONS IS AN UTILITY CLASS PRESENT IN JAVA.UTIL PACKAGE TO DEFINE SEVERAL UTILITY METHODS FOR COLLECTION OBJECTS.
+  LIKE SORTING EARCHING ETC..,
+
+
+
+
+
+
+
+
+
+
+
