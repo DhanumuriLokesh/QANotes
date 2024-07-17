@@ -20,7 +20,15 @@ ADD FOLDERS : PUBLIC, SRC
 =======================================================================================================
 DAY 4 ::
 PAGES >> STATIC , DYNAMIC 
-1. STATIC PAGE , 
+1. STATIC PAGE : CONTINOUS :: everyone it will respond same. no cahnge accordingly to user actions.
+2. DYNAMIC PAGE : IT REPONDS TO USER ACTIONS DYNAMICALLY NOT SAME.
+                  NOT CONTINUOUS.DESTROY AFTER USED.
+3. HTML ::
+   Can design both pages,
+
+
+
+
 
 
 
