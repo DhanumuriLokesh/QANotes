@@ -1,0 +1,29 @@
+DAY 2:
+========================
+DATA CENTRE 
+APP CENTRE
+FRONTEND DEVELOPER
+
+==================
+DAY 3 ::
+==================
+SET UP::
+Node js downlad :: node -v 18+ version 
+npm -v : version 10+
+EDITOR :: VS CODE
+EXENSIONS :: LIVE SERVER, INTELLISENSE, VS CODE ICONS.
+======================================================
+TERMINAL : Command Prompt -->> 
+npm init -y :: For creating "package.json" [Initializing The Project]
+               It has meta data of a project. name, version, license , author ,dependencies etc..,
+ADD FOLDERS : PUBLIC, SRC
+=======================================================================================================
+DAY 4 ::
+PAGES >> STATIC , DYNAMIC 
+1. STATIC PAGE , 
+
+
+
+
+
+
