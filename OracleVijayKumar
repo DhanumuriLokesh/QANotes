@@ -1,0 +1,57 @@
+Career in oracle : DEVELOPER OR ADMIN both are different
+========================================================
+SQL Dev
+Senior 
+Architech
+
+Ways to store in data :
+Files 
+DB
+=========================================================
+DAY 1 :: 
+========
+what we cover?
+sql plsql
+DB Fundamental
+=======================
+DB Funda::
+
+what is DB?
+A database is an organized collection of data that is stored 
+and managed electronically. 
+It allows users to efficiently store, retrieve, 
+and manipulate data.
+======================================================
+TYPES OF DB:
+============
+Relational Databases: 
+Use structured tables and predefined schemas 
+(e.g., MySQL, PostgreSQL).
+
+NoSQL Databases: 
+Handle unstructured or semi-structured data 
+(e.g., MongoDB, Cassandra).
+=======================================================
+OLTP (Online Transaction Processing)
+OLAP (Online Analytical Processing) 
+these are two types of database systems designed for 
+different purposes. 
+========================================================
+SAP HANA: Combines transactional and analytical 
+processing on a single platform.
+
+ETL Tools (Extract, Transform, Load):
+
+Apache Nifi: For data integration and movement between OLTP and OLAP systems.
+Talend: A powerful ETL tool for extracting and transforming data for analytics.
+Informatica PowerCenter: Industry-standard ETL tool for OLAP environments.
+
+
+
+
+
+
+
+
+
+
