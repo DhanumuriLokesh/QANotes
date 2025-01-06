@@ -45,6 +45,95 @@ ETL Tools (Extract, Transform, Load):
 Apache Nifi: For data integration and movement between OLTP and OLAP systems.
 Talend: A powerful ETL tool for extracting and transforming data for analytics.
 Informatica PowerCenter: Industry-standard ETL tool for OLAP environments.
+==========================================================================================================================
+Oracle Day 5::
+what is schema in db?
+What is express edition in oracle?
+What is DBA created at the time of installation ? username nd password?
+
+create user :
+CREATE USER <name> IDENTIFIED BY <pswd>
+DEFAULT TABLESPACE USERS
+QUOTA UNLIMITED ON USERS;
+========================================================
+Above will create user name and password|
+What is Tablespace?
+What is unlimited on users?
+What do you mean by last two lines?
+
+step 3 : Grant Permission on user:
+=======================================================
+SQL> GRANT CONNECT, RESOURCE TO <username>;
+    CONNECT   :  TO CONNECT TO DB;
+    RESOURCE  :  TO CREATE TABLES;
+
+To Give DBA PERMISSIONS?
+GRANT DBA TO username;
+======================================================  
+To grant DBA (Database Administrator) permissions to a user in Oracle, you can use the `GRANT` statement. Be cautious when granting DBA privileges, as they provide full access to all database objects and operations.
+
+### Syntax to Grant DBA Permission
+```sql
+GRANT DBA TO username;
+```
+
+### Example
+If the username is `lokesh`, the command would be:
+```sql
+GRANT DBA TO lokesh;
+```
+
+### Steps:
+1. **Log in as a User with Administrative Privileges:**
+   - Connect as a user with `SYSDBA` privileges, such as the `SYS` user.
+   ```sql
+   sqlplus / as sysdba
+   ```
+
+2. **Execute the Grant Statement:**
+   ```sql
+   GRANT DBA TO lokesh;
+   ```
+
+3. **Verify the Permissions:**
+   To confirm that the user has been granted DBA privileges:
+   ```sql
+   SELECT * FROM dba_role_privs WHERE grantee = 'LOKESH';
+   ```
+
+---
+
+### Revoke DBA Permission (If Necessary)
+To remove DBA privileges from a user:
+```sql
+REVOKE DBA FROM username;
+```
+
+Example:
+```sql
+REVOKE DBA FROM lokesh;
+```
+
+---
+
+### Caution
+Granting DBA privileges gives the user full control over the database, which includes the ability to:
+- Create, modify, and drop any schema objects.
+- Manage users and permissions.
+- Perform database maintenance tasks.
+
+Only grant DBA privileges to trusted users who need full administrative access.
+    
+============================================================================================================
+How to change password?
+BY USER :
+SQL > PASSWORD
+ give old password
+ give new password
+
+BY DBA ::
+SQL > ALTER USER <NAME> IDENTIFIED BY <PASSWORD>;
+============================================================================================================
 
 
 
