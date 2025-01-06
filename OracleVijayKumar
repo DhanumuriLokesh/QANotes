@@ -140,9 +140,20 @@ DROP USER <NAME> [CASCADE];
 what is cascade?
 DROP USER username CASCADE;
 
+In Oracle, the CASCADE option is typically used with foreign key constraints, and it isn't directly applicable to user accounts. However, if you're referring to cascading behavior when managing users and related objects (e.g., tables, views, etc.), you would use CASCADE in the context of dropping users or managing objects owned by a user.
+
 This command does the following:
 Deletes the user and all objects (tables, views, etc.) owned by the user.
 Removes all privileges granted to and by the user.
+====================================================
+SQL LANGUAGE:
+=============
+DDL DML DCL TCL DQL
+DDL: CREATE ALTER DROP TUNCATE RENAME FLASHBACK PURGE
+DML : INSERT UPDATE DELETE ,INSERT ALL, MERGE
+DQL : SELECT
+TCL : COMMIT ROLLBACK SAVEPOINT 
+DCL : GRANT REVOKE
 ====================================================
 
 
