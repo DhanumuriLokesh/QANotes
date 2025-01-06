@@ -132,11 +132,18 @@ SQL > PASSWORD
  give new password
 
 BY DBA ::
-SQL > ALTER USER <NAME> IDENTIFIED BY <PASSWORD>;
+ALTER USER <NAME> IDENTIFIED BY <PASSWORD>;
 ============================================================================================================
+TO DROP A USER ?
+DROP USER <NAME> [CASCADE];
+=================================================
+what is cascade?
+DROP USER username CASCADE;
 
-
-
+This command does the following:
+Deletes the user and all objects (tables, views, etc.) owned by the user.
+Removes all privileges granted to and by the user.
+====================================================
 
 
 
