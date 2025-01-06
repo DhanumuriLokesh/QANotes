@@ -149,12 +149,166 @@ Removes all privileges granted to and by the user.
 SQL LANGUAGE:
 =============
 DDL DML DCL TCL DQL
-DDL: CREATE ALTER DROP TUNCATE RENAME FLASHBACK PURGE
+DDL : CREATE ALTER DROP TUNCATE RENAME FLASHBACK PURGE
 DML : INSERT UPDATE DELETE ,INSERT ALL, MERGE
 DQL : SELECT
 TCL : COMMIT ROLLBACK SAVEPOINT 
 DCL : GRANT REVOKE
 ====================================================
+FLASHBACK PURGE INSERT ALL 
+[NOT THERE IN OTHER ONLY IN ORALE]
+
+
+============================================================================================================
+DAY 7
+========
+create table ?
+CREATE TABLE <TABLENAME> 
+(
+COLUMNSNAME DT CONSTRANT,
+COLUMNNAME DT CONSTRAINT
+)
+===========================================
+ALTER TABLE NAME 
+RENAME <NAME> TO < NEW NAME>;
+===========================================
+ALTER COLUMN NAME
+ALTER TABLE <NAME>
+RENAME COLUMN <NAME> TO <NEW NAME>
+============================================
+DESC <TABLE NAME>
+TO KNOW TABLE STRUCTURE
+===========================================
+INSERT ROWS 
+INSERT ALL 
+INTO <TABLENAME> VALUES
+(
+COLVALUE, CLOVALUE, COLVALUE, COLVALU.....
+);
+============================================
+ADD COLUMN TO EMPLOYEES TABLE
+ALTER TABLE Employees
+ADD Department VARCHAR2(50);
+============================================
+MODIFY COLUMN SALARY
+====================
+ALTER TABLE Employees
+MODIFY Salary NUMBER(10, 2);
+
+ALTER TABLE EMP
+MODIFY EMP_SALARY NUMBER(12,4);
+============================================
+To remove a column from a table:
+
+sql
+Copy code
+ALTER TABLE Employees
+DROP COLUMN Department;
+
+The `ALTER TABLE` statement in SQL is used to modify the structure of an existing table. You can use it to:
+
+1. **Add, Modify, or Drop Columns**.
+2. **Rename Columns or the Table Itself**.
+3. **Add or Drop Constraints**.
+4. **Change Storage Settings**.
+
+Here are some examples for various use cases:
+
+---
+
+### 1. **Add a Column**
+To add a new column to a table:
+```sql
+ALTER TABLE Employees
+ADD Department VARCHAR2(50);
+```
+This adds a column named `Department` of type `VARCHAR2(50)` to the `Employees` table.
+
+---
+
+### 2. **Modify a Column**
+To change the data type or size of an existing column:
+```sql
+ALTER TABLE Employees
+MODIFY Salary NUMBER(10, 2);
+```
+This changes the `Salary` column to a `NUMBER` data type with a precision of 10 and scale of 2.
+
+---
+
+### 3. **Drop a Column**
+To remove a column from a table:
+```sql
+ALTER TABLE Employees
+DROP COLUMN Department;
+```
+This deletes the `Department` column from the table.
+
+---
+
+### 4. **Rename a Column**
+To rename an existing column:
+```sql
+ALTER TABLE Employees
+RENAME COLUMN Name TO FullName;
+```
+This renames the `Name` column to `FullName`.
+
+---
+
+### 5. **Rename the Table**
+To rename the table itself:
+```sql
+ALTER TABLE Employees
+RENAME TO Staff;
+```
+This renames the `Employees` table to `Staff`.
+
+---
+
+### 6. **Add a Constraint**
+To add a primary key or other constraints:
+```sql
+ALTER TABLE Employees
+ADD CONSTRAINT PK_Employees PRIMARY KEY (ID);
+```
+This adds a primary key constraint on the `ID` column.
+
+---
+
+### 7. **Drop a Constraint**
+To remove a constraint (e.g., primary key):
+```sql
+ALTER TABLE Employees
+DROP CONSTRAINT PK_Employees;
+```
+
+---
+
+### 8. **Set Default Value for a Column**
+To set a default value for a column:
+```sql
+ALTER TABLE Employees
+MODIFY Job_Title DEFAULT 'Employee';
+```
+
+---
+
+### 9. **Add a Column with Default**
+To add a new column with a default value:
+```sql
+ALTER TABLE Employees
+ADD Join_Status VARCHAR2(20) DEFAULT 'Active';
+```
+
+---
+
+### Notes:
+- Always ensure the changes you make align with the existing data and business requirements.
+- Certain operations, like dropping a column, cannot be undone, so proceed with caution.
+- For tables with large amounts of data, `ALTER TABLE` operations may take time or require locking mechanisms.
+
+Would you like to try a specific `ALTER TABLE` example or need clarification on a use case?
 
 
 
